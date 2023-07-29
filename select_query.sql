@@ -36,6 +36,22 @@ SELECT *
     FROM products
     where price<100
     order by price
+    limit 3
+
+-- ####################################################################
+-- # Basic SELECT statement
+-- # See https://www.ibm.com/docs/en/db2-for-zos/13?topic=statements-select for complete syntax.
+-- ####################################################################
+SELECT max(price) as max_price
+from products
+
+select avg(price) 
+from product 
+
+select count(*) ,coubtry as num_of_customer
+ from customers
+ group by country
+
        
 
 
